@@ -30,6 +30,6 @@ const func3 = () => {
   };
   const text = lines[0];
   const reg = /[AEGIOSZT]/gi;
-  const result = text.replace(reg, (t) => table[t] || t);
+  const result = text.replace(reg, (t) => table[t.toUpperCase()] || t);
   console.log(result);
 };
